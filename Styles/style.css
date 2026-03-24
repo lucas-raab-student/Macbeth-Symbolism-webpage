@@ -1,0 +1,24 @@
+#NavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#NavBar ul {
+    text-align: center;
+}
+
+#NavBar ul li {
+    display: inline-block;
+    float: none;
+}
+
+#NavBar ul li a {
+      text-align: center;
+    padding: 14px 16px; 
+}
+body
+{
+background-color: #E0F7FA ;
+}
