@@ -11,12 +11,18 @@
     display: inline-block;
 }
 
+
 #NavBar ul li a {
     display: block; /* Added block so padding works correctly */
     padding: 14px 16px; 
     text-decoration: none;
 }
-
+#NavBar
+{
+    background-color: aqua;
+    border-color: black;
+    width: auto;
+}
 /* Global Styles */
 body {
     background-color: #E0F7FA;
