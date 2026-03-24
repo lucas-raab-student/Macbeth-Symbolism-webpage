@@ -22,3 +22,9 @@ body
 {
 background-color: #E0F7FA ;
 }
+header{
+    text-align: center;
+}
+#aboutme {
+    display:flexbox
+}
