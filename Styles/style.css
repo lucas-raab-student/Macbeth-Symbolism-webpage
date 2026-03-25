@@ -9,6 +9,7 @@
 
 #NavBar ul li {
     display: inline-block;
+    
 }
 
 
@@ -19,13 +20,16 @@
 }
 #NavBar
 {
-    background-color: aqua;
-    border-color: black;
+    font-size: 30px;
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border-radius: 25px;
     width: auto;
+    
 }
 /* Global Styles */
 body {
-    background-color: #E0F7FA;
+    background-color: #F7F9FC;
 }
 
 header {
@@ -33,7 +37,7 @@ header {
 }
 
 #aboutme {
-    display: flex; 
+
 }
 
 .info {
@@ -52,4 +56,16 @@ header {
     background-color: lightgrey;
     min-height: 200px; /* Added so empty boxes show up */
     padding: 10px;
+}
+
+#para-1{
+    background-color: #E0F2FE;
+}
+#para-2
+{
+    background-color: #DCFCE7;
+}
+#para-3
+{
+    background-color: #FEF3C7;
 }
