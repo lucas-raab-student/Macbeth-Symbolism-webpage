@@ -29,6 +29,8 @@
 }
 /* Global Styles */
 body {
+    min-height: 200vh; 
+    margin: 0;
     background-color: #F7F9FC;
 }
 
@@ -36,9 +38,9 @@ header {
     text-align: center;
 }
 
-#aboutme {
+/* #aboutme {
 
-}
+} */
 
 .info {
     text-align: center;
@@ -59,13 +61,21 @@ header {
 }
 
 #para-1{
-    background-color: #E0F2FE;
+    background-color: #36586e;
 }
 #para-2
 {
-    background-color: #DCFCE7;
+    background-color: #4f8361;
 }
 #para-3
 {
-    background-color: #FEF3C7;
+    background-color: #7f723f;
+}
+body {
+  transition: background-color 0.5s ease;
+}
+#sentinel {
+    height: 20px;
+    width: 100%;
+    background-color: black;
 }

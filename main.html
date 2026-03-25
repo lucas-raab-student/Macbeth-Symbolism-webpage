@@ -3,46 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title> <!-- Added a title for the browser tab -->
+    <title>My Blog</title> 
     <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to my blog. Please scroll and enjoy</h1>
-    </header>
+    <div class="scroll-section" data-color="lightblue" data-text="black" data-message="Welcome to my blog!">
+        <header>
+            <h1>Welcome to my blog. Please scroll and enjoy</h1>
+        </header>
 
-    <nav id="NavBar"> 
-        <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-        </ul>
-    </nav>
-
-    <div id="aboutme">
-        <aside>
-            <h1>About Me</h1>
-            <p>
-                My name is [Insert Name].<br>
-                I am a brand new blogger.<br>
-                I love walking, playing games, watching movies, and hanging around with my friends.<br>
-                I hope you enjoy learning about me.
-            </p>
-               </aside>
+        <nav id="NavBar"> 
+            <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+            </ul>
+        </nav>
     </div>
-            <div class="info">
-                <h1>Newest info</h1>
-                <div class="Grid-container">
-                    <div id="para-1"> 
-                        <h1>past</h1>
-                    </div>
-                    <div id="para-2"><h1>now</h1> </div>
-                    <div id="para-3"><H1>future</H1> </div>
-                </div>
+
+    <div class="scroll-section" data-color="#2c3e50" data-text="white" data-message="All About Me">
+        <div id="aboutme">
+            <aside>
+                <h1>About Me</h1>
+                <p>
+                    My name is [Insert Name].<br>
+                    I am a brand new blogger.<br>
+                    I love walking, playing games, watching movies, and hanging around with my friends.<br>
+                    I hope you enjoy learning about me.
+                </p>
+            </aside>
+        </div>
+        
+        <div class="info">
+            <h1>Newest info</h1>
+            <div class="Grid-container">
+                <div id="para-1"><h1>past</h1></div>
+                <div id="para-2"><h1>now</h1></div>
+                <div id="para-3"><h1>future</h1></div>
             </div>
-     
+        </div>
+    </div>
+
+    <!-- On-Screen Console Display -->
+    <div id="console-display" style="position: fixed; bottom: 0; width: 100%; background: #222; color: #0f0; padding: 10px; height: 100px; overflow-y: auto; font-family: monospace; z-index: 999;">
+        <strong>On-Screen Console:</strong>
+        <div id="log-output"></div>
+    </div>
+
+    <div id="sentinel" style="height: 20px;"></div>
 
     <script src="Js/script.js"></script>
 </body>
