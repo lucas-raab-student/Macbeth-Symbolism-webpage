@@ -82,3 +82,17 @@ body {
 width: 50px;
   height: 50px;
 }
+.Eyeballgrid
+{
+        flex: 1;           /* Makes it match the width of para-1, 2, and 3 */
+    min-height: 200px; 
+}
+#Eyeball
+{
+   width: 50px;
+   height: 50px;
+   display: none;
+}
+.Eyeballgrid:hover #Eyeball {
+    display: block;
+}
