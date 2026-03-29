@@ -9,27 +9,29 @@
 
 #NavBar ul li {
     display: inline-block;
-    
+
 }
 
 
 #NavBar ul li a {
-    display: block; /* Added block so padding works correctly */
-    padding: 14px 16px; 
+    display: block;
+    /* Added block so padding works correctly */
+    padding: 14px 16px;
     text-decoration: none;
 }
-#NavBar
-{
+
+#NavBar {
     font-size: 30px;
     background-color: #1E293B;
     color: #F8FAFC;
     border-radius: 25px;
     width: auto;
-    
+
 }
+
 /* Global Styles */
 body {
- 
+
     background-color: #F7F9FC;
 }
 
@@ -48,51 +50,82 @@ header {
 /* Grid/Flex Container */
 .Grid-container {
     display: flex;
-    gap: 10px; 
+    gap: 10px;
     padding: 20px;
 }
 
-#para-1, #para-2, #para-3 {
+#para-1,
+#para-2,
+#para-3 {
     flex: 1;
     background-color: lightgrey;
-    min-height: 200px; /* Added so empty boxes show up */
+    min-height: 200px;
+    /* Added so empty boxes show up */
     padding: 10px;
 }
 
-#para-1{
+#para-1 {
     background-color: #36586e;
 }
-#para-2
-{
+
+#para-2 {
     background-color: #4f8361;
 }
-#para-3
-{
+
+#para-3 {
     background-color: #7f723f;
 }
+
 body {
-  transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
 }
+
 .stain {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .Middle .stain {
-width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }
-.Eyeballgrid
-{
-        flex: 1;           /* Makes it match the width of para-1, 2, and 3 */
-    min-height: 200px; 
+.Heavy .stain{
+    width: 100px;
+    height: 100px;
 }
-#Eyeball
-{
-   width: 50px;
-   height: 50px;
-   display: none;
+.Eyeballgrid {
+    flex: 0.10;
+    /* Makes it match the width of para-1, 2, and 3 */
 }
-.Eyeballgrid:hover #Eyeball {
+
+#Eyeball {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+ #Eyeball:hover {
     display: block;
+    opacity: .8;
+}
+.blur-light {
+    filter: blur(5px);
+
+}
+
+.blur-heavy {
+    filter: blur(10px);
+}
+.early {
+  background: #c34e4e;
+}
+
+.mid {
+  background: #201414;
+}
+
+.late {
+  background: #140000;
+  color: aliceblue;
 }
