@@ -117,9 +117,20 @@ body {
 
 }
 
+/* Update this in your CSS */
 .blur-heavy {
+    display: inline-block; /* Essential for filters on inline text */
     filter: blur(10px);
+    transition: filter 1.2s ease, color 1s ease;
+    cursor: help;
 }
+
+/* Human Nature: The truth is revealed when you dwell on it */
+.blur-heavy:hover {
+    filter: blur(0px);
+    color: #ff4d4d; /* Turns a 'blood' red when revealed */
+}
+
 .early {
   background: #c34e4e;
   color:white;
