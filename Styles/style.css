@@ -79,19 +79,22 @@ header {
 body {
     transition: background-color 0.5s ease;
 }
-
+.stain img {
+    width: 100%;
+    height: auto;
+}
 .stain {
     width: 20px;
     height: 20px;
 }
 
 .Middle .stain {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
 }
 .Heavy .stain{
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
 }
 .Eyeballgrid {
     flex: 0.10;
@@ -119,10 +122,13 @@ body {
 }
 .early {
   background: #c34e4e;
+  color:white;
 }
 
 .mid {
   background: #201414;
+  color:white;
+
 }
 
 .late {
